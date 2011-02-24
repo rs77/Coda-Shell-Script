@@ -1,5 +1,5 @@
 #!/bin/sh
-#
+
 # Coda from the command line
 # Version 1.0
 #
@@ -10,7 +10,7 @@
 ###################### CONFIG ######################
 
 # Path to Coda.app
-coda_path="/Applications/Coda.app"
+codapath="/Applications/Coda.app"
 
 ####################################################
 
@@ -24,13 +24,13 @@ open_with_coda () {
 			touch "$arg"
 		fi
 	done
-	open -a "$coda_path" "$@"
+	open -a "$codapath" "$@"
 }
 
 # open_coda ():
 # Launch Coda.app
 open_coda () {
-	open "$coda_path"
+	open "$codapath"
 }
 
 # display_help ():
