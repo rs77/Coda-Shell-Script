@@ -10,7 +10,7 @@
 ###################### CONFIG ######################
 
 # Path to Coda.app
-coda_path="Applications/Coda.app"
+coda_path="/Applications/Coda.app"
 
 ####################################################
 
@@ -18,19 +18,30 @@ coda_path="Applications/Coda.app"
 # Open any number of files with Coda.app
 # Files that don't exist will be created
 open_with_coda () {
-
+	for arg in "$@"
+	do
+		if [ ! -f "$arg" ] ; then
+			touch "$arg"
+		fi
+	done
+	open -a "$coda_path" "$@"
 }
 
 # open_coda ():
 # Launch Coda.app
 open_coda () {
-
+	open "$coda_path"
 }
 
 # display_help ():
 # Show a helpful usage message
 display_help () {
-
+	echo "usage: $0 [--help|-h] [<file> ...]"
+	echo
+	echo '\t--help|-h   show this message'
+	echo '\t<file>      file will be opened in Coda.app'
+	echo '\t            (omit to launch Coda.app)'
+	echo
 }
 
 ####################################################
@@ -41,7 +52,7 @@ if [ $# -gt 0 ]; then
 			display_help
 		;;
 		*)
-			open_with_coda $@
+			open_with_coda "$@"
 		;;
 	esac
 else 
