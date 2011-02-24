@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# Coda from the command line
+# Version 1.0
+#
+# Open Coda or open files in Coda from the command line
+#
+# (C) Noah Frederick 2011 <http://noahfrederick.com>
