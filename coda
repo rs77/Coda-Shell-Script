@@ -6,3 +6,44 @@
 # Open Coda or open files in Coda from the command line
 #
 # (C) Noah Frederick 2011 <http://noahfrederick.com>
+
+###################### CONFIG ######################
+
+# Path to Coda.app
+coda_path="Applications/Coda.app"
+
+####################################################
+
+# open_with_coda ():
+# Open any number of files with Coda.app
+# Files that don't exist will be created
+open_with_coda () {
+
+}
+
+# open_coda ():
+# Launch Coda.app
+open_coda () {
+
+}
+
+# display_help ():
+# Show a helpful usage message
+display_help () {
+
+}
+
+####################################################
+
+if [ $# -gt 0 ]; then
+	case "$1" in
+		--help|-h)
+			display_help
+		;;
+		*)
+			open_with_coda $@
+		;;
+	esac
+else 
+	open_coda
+fi 
