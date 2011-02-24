@@ -1,4 +1,3 @@
-=================
 CODA SHELL SCRIPT
 =================
 Coda for the command line
@@ -7,12 +6,12 @@ Version 1.0
 
 
 OVERVIEW
-=================
+-----------------
 Open files with Panic, Inc.'s Coda <http://www.panic.com/coda/> from the command line.
 
 
 USAGE
-=================
+-----------------
 coda [--help|-h] [<file> ...]
 
 	--help|-h   show a usage message
@@ -34,7 +33,7 @@ Open file.txt and create and open file2.txt
 
 
 CREDITS
-=================
+-----------------
 (C) Noah Frederick 2011 <http://noahfrederick.com>
 
 Credit goes to Command-Line Coda, a Perl script (C) Aditya Bhargava, for the idea.
