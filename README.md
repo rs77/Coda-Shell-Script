@@ -12,7 +12,7 @@ Open files with Panic, Inc.'s Coda <http://www.panic.com/coda/> from the command
 
 USAGE
 -----------------
-coda [--help|-h] [<file> ...]
+	coda [--help|-h] [<file> ...]
 
 	--help|-h   show a usage message
 
@@ -27,20 +27,21 @@ Open file.txt:
 
 	> coda file.txt
 
-Open file.txt and create and open file2.txt
+Open file.txt and create and open file2.txt:
 
 	> coda file.txt file2.txt
 
 
 CREDITS
 -----------------
-(C) Noah Frederick 2011 <http://noahfrederick.com>
+(C) 2011 Noah Frederick <http://noahfrederick.com/>
 
 Credit goes to Command-Line Coda, a Perl script (C) Aditya Bhargava, for the idea.
-See <http://wefoundland.com/project/command-line_coda/>
+See <http://wefoundland.com/project/command-line_coda/>.
 
 Coda (C) Panic, Inc. Coda is a trademark of Panic, Inc.
 
 
-
-Source repository is available at <https://github.com/noahfrederick/Coda-Shell-Script>
+SOURCE
+-----------------
+The Git repository is available at <https://github.com/noahfrederick/Coda-Shell-Script>.
