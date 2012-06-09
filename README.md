@@ -3,6 +3,8 @@ CODA SHELL SCRIPT
 Coda for the command line
 
 Version 1.0
+Version 1.1
+Script now works with Coda 2 & makes Coda 2 default text editor
 
 
 OVERVIEW
@@ -23,9 +25,10 @@ Launch Coda:
 
 	> coda
 
-Open file.txt:
+Open file.txt (either command):
 
 	> coda file.txt
+	> open file.txt
 
 Open file.txt and create and open file2.txt:
 
