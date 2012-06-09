@@ -6,13 +6,24 @@
 # Open Coda or open files in Coda from the command line
 #
 # (C) Noah Frederick 2011 <http://noahfrederick.com>
+# 
+# Version 1.1
+# point codapath to Coda 2.app
+# make coda default editor with open command
+# create alias for 'coda'
 
 ###################### CONFIG ######################
 
 # Path to Coda.app
-codapath="/Applications/Coda.app"
+codapath="/Applications/Coda 2.app"
 
 ####################################################
+
+# make default editor
+export EDITOR="$codapath -w"
+
+# create 'coda' alias
+alias coda=open_with_coda
 
 # open_with_coda ():
 # Open any number of files with Coda.app
